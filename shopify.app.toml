@@ -1,33 +1,28 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-client_id = "de154adb2e7874275b0ac990566e4df6"
-name = "test-app"
-handle = "test-app-10314"
-application_url = "https://gras-patient-count-nodes.trycloudflare.com"
+client_id = 
+name = 
+handle = 
+application_url = 
 embedded = true
 
 [build]
-automatically_update_urls_on_dev = true
-dev_store_url = "quickstart-c8cca45a.myshopify.com"
-include_config_on_deploy = true
+automatically_update_urls_on_dev = 
+dev_store_url = 
+include_config_on_deploy = 
 
 [access_scopes]
-# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
 scopes = "write_products"
 
 [auth]
-redirect_urls = [
-  "https://gras-patient-count-nodes.trycloudflare.com/auth/callback",
-  "https://gras-patient-count-nodes.trycloudflare.com/auth/shopify/callback",
-  "https://gras-patient-count-nodes.trycloudflare.com/api/auth/callback"
-]
+redirect_urls = []
 
 [webhooks]
 api_version = "2024-07"
 
-  [[webhooks.subscriptions]]
-  topics = [ "app/uninstalled" ]
-  uri = "/webhooks"
+[[webhooks.subscriptions]]
+topics = [ "app/uninstalled" ]
+uri = "/webhooks"
 
 [pos]
 embedded = false

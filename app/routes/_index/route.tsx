@@ -38,7 +38,7 @@ export default function App() {
             <Card>
               <BlockStack gap="500">
                 <Text as={"h2"} variant="headingLg">
-                  Title
+                  Title app
                 </Text>
               </BlockStack>
             </Card>
